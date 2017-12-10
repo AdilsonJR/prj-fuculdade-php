@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Faculdade Genérica</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+  <style>
+    @font-face { font-family: Preside; src: url('PresideLight_PERSONAL_USE.ttf'); } 
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-family: Preside"><h1>Faculdade Genérica</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre" >Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato" >Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sistema_escola/index.php">Acesso Aluno/Professor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="overlay">
+        <div class="container">
+          <h1 class="display-1 text-white">Faculdade Genérica</h1>
+          <h2 class="display-4 text-white">Igual ensino médio, só que mais dificil</h2>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div  id="sobre" class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid " src="img/adm.jpg" alt="">
+            </div>
+          </div>
+          <div  class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Administração</h2>
+              <p>O administrador gerencia recursos financeiros, materiais ou humanos de uma empresa. Ele tem lugar em praticamente todos os departamentos de uma organização pública, privada ou sem fins lucrativos. É sua função definir estratégias e gerenciar o dia a dia da organização, traçando metas, criando políticas internas, realizando auditorias e analisando resultados.</p>
+              <br>
+              <p>Em recursos humanos, responde pelo relacionamento da empresa com funcionários e sindicatos, gerencia admissões e demissões, planos de carreira e benefícios. Na área de compras, faz cotação de preços, providencia a aquisição de matérias-primas e insumos, negocia com fornecedores e controla os estoques.
+				<br>
+			  Em vendas, encarrega-se da negociação de preços, condições de pagamento e prazos de entrega com clientes e das atividades de publicidade e marketing. No departamento financeiro, lida com pagamentos e recebimentos, a agenda de impostos ou a cobrança de clientes. Em indústrias, trabalha no controle de qualidade e de estoques de produtos acabados.</p>
+
+              <button class="btn btn-alert">Agende seu Vestibular!!!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="contato" class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/mail.jpeg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2  class="display-4">Contato</h2>
+              <div class="form-group">
+              <form name="enviamensagem" action="enviamensagem.php" method="post">
+              <label for="nome">Nome:</label>
+              <input class="form-control" type="text" name="name" placeholder="Digite seu nome" required><br>  
+              <label for="email">Email:</label> 
+              <input class="form-control" type="text" name="email" placeholder="Digite seu email" required><br>
+              <label for="msg">Mensagem:</label>
+              <textarea class="form-control" name="msg" id="assunto" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+              <br>
+              <input class="btn btn-default" type="submit" value="Enviar">
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Local</h3>
+                        <p>Rua Amarela, 001
+                            <br>Cidade da Rua Amarela-PR,20200000</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Nos procure na Web!</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href=""><img src="img/facebook.png" alt="" height="50" width="50"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Matheus E. Fachini 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
